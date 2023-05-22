@@ -1,5 +1,9 @@
-<h2>This is your question:</h2>
-<p><%= params["question"] %></p>
+<h1>Stupid coaching</h1>
 
-<h2>This is your answer</h2>
-<p><%= @answer %></p>
+<p><%= params["question"] %></p>
+<p><i>-You</i></p>
+
+<p class="p-3 mb-2 bg-warning text-dark" style="--bs-bg-opacity: .3;"><strong><%= @answer %></strong><br><i>-Your coach</i></p>
+
+
+<%= link_to 'Ask another question', ask_path %>
